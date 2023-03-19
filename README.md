@@ -1,13 +1,1 @@
-# Peer to Peer Ride sharing
-![Home_page](https://user-images.githubusercontent.com/48215294/171343204-4fde505e-b69a-47d1-815d-7ed95da61f6a.png)
-![User_login](https://user-images.githubusercontent.com/48215294/171343663-b176f673-9665-42d1-ac16-d50bb205537d.png)
-![User_register](https://user-images.githubusercontent.com/48215294/171344105-f5af4602-fd6c-4fb0-acf1-adeb16985c25.png)
-![Search_cabs](https://user-images.githubusercontent.com/48215294/171343249-b0e40081-b55b-4a0a-b065-c84b53e676c9.png)
-![Admin_login](https://user-images.githubusercontent.com/48215294/171343254-9a0871f4-aade-4889-9e84-6fcc8eb8e846.png)
-![Dashboard_home](https://user-images.githubusercontent.com/48215294/171343261-21beb4a3-efd9-403a-a2af-431bb9b4089b.png)
-![Create_ride](https://user-images.githubusercontent.com/48215294/171343322-94546225-a614-45f5-b580-562b53f02880.png)
-![Create_ride2](https://user-images.githubusercontent.com/48215294/171343616-96ebfe64-e073-478b-9c41-942cf4057581.png)
-![Requested_rides](https://user-images.githubusercontent.com/48215294/171343336-d36dc40f-e8b8-4d75-bdca-2a3cd6068d68.png)
-![Available_rides](https://user-images.githubusercontent.com/48215294/171343363-fe8b1211-ece0-40a1-adda-ecd45d28fbe8.png)
-![My_rides](https://user-images.githubusercontent.com/48215294/171343776-d5f40407-a628-47f6-81d9-abfddd1cec03.png)
-![Profile_page](https://user-images.githubusercontent.com/48215294/171343396-80b6bdcd-2b50-4834-8bd8-d8fe26578e87.png)
+# Decentralized-Ride-Sharing
