@@ -1,0 +1,79 @@
+#createRide{
+  min-height: 90vh;
+  overflow-x: hidden;
+}
+
+.createRide{
+  width: calc(100% - 16rem);
+  margin-top: 70px;
+  margin-left: 16rem;
+  transition: all 0.4s;
+} 
+
+.createRide.active {
+  width: 100%;
+  margin: 40px 0 0 0;
+}
+
+.rideInput{
+  box-shadow: none !important;
+  border: 0 !important;
+  margin: 3px;
+  border-bottom: 1px solid #E5E4E2 !important;
+  box-shadow: none !important;
+  max-width: 280px;
+}
+
+.form-label{
+    font-size: 16px;
+    font-weight: normal;
+    
+}
+
+
+
+.react-datepicker__input-container{
+max-width: 220px;
+}
+
+.selectDate,.react-time-picker__wrapper{
+max-width: 280px;
+box-shadow: none !important;
+border: none;
+border-bottom: 1px solid #CBC8C0;
+font-weight: normal;
+color: #7B7D7D;
+}
+
+.rideButton{
+margin:  20px 0 20px 0;
+padding: 5px 20px;
+border:  1px solid #6D19FC;
+background-color: #6D19FC;
+color: white;
+font-size: 16px;
+border-radius: 0px;
+box-shadow: none !important;
+}
+.rideButton:hover{
+border:  1px solid #6D19FC;
+background-color: white;
+color: #6D19FC;
+}
+
+@media (max-width: 768px) {
+   .createRide{
+    width: 100%;
+    margin: 70px 0 0 0;
+  }
+  .createRide.active {
+    margin-left: 16rem;
+    width: calc(100% - 16rem);
+  }
+}
+
+@media (max-width: 568px){
+.rideForm{
+  max-width: 400px;
+}
+}
