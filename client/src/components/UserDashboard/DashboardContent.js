@@ -30,7 +30,7 @@ function DashboardContent(props){
     <div>
         <div id="content" className={props.sideNav ? 'page-content p-5 active' : 'page-content p-5'}>
           <div className="container">
-          <h5 className="m-1" style={{color:"#6D19FC"}}>Site Statistics</h5>
+          <h5 className="m-1" style={{color:"black"}}>Site Statistics</h5>
             <CardGroup>
               <Card className="cardBox1">
                 <Card.Body>
@@ -50,7 +50,7 @@ function DashboardContent(props){
                   </Card.Text>
                 </Card.Body>
               </Card> */}
-              <Card className="cardBox2">
+              <Card className="cardBox2 mx-5  ">
                 <Card.Body>
                   <Card.Title>Total No of Ride</Card.Title>
                   <Card.Text className="d-flex justify-content-between">
@@ -59,7 +59,7 @@ function DashboardContent(props){
                   </Card.Text>
                 </Card.Body>
               </Card>
-              <Card className="cardBox1">
+              {/* <Card className="cardBox1">
                 <Card.Body>
                   <Card.Title>Revenue</Card.Title>
                   <Card.Text className="d-flex justify-content-between">
@@ -70,10 +70,10 @@ function DashboardContent(props){
                     <RiMoneyDollarCircleFill style={{fontSize:"4rem"}} />
                   </Card.Text>
                 </Card.Body>
-              </Card>
+              </Card> */}
             </CardGroup>
 
-            <h5 className="m-1 mt-5" style={{color:"#6D19FC"}}>Ride Statistics</h5>
+            <h5 className="m-1 mt-5" style={{color:"black"}}>Ride Statistics</h5>
             <CardGroup>
               <Card className="cardBox2">
                 <Card.Body>
@@ -104,7 +104,7 @@ function DashboardContent(props){
               </Card>
             </CardGroup>
             <div className="recentTransactions m-1 mt-5">
-              <h5 style={{color:"#6D19FC"}}>Recent Transactions</h5>
+              <h5 style={{color:"black"}}>Recent Transactions</h5>
               <Table className="mt-1 text-center" responsive="sm">
                     <tbody>
                         {/* <tr>

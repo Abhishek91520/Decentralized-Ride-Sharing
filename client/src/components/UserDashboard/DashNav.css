@@ -4,6 +4,7 @@
     overflow: hidden;
     white-space: nowrap;
     width: 150px;
+    color: white;
 }
 
 @media (max-width: 500px) {
@@ -11,4 +12,10 @@
         display: none;
         visibility: hidden;
     }
+}
+.sidebarbutton{
+    background-color: black !important;
+    color: white !important;
+    border-color:black !important;
+    margin-left: 40px;
 }

@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect, useContext } from "react";
 import { StandaloneSearchBox, useLoadScript, GoogleMap, DirectionsRenderer,DirectionsService,google } from "@react-google-maps/api";
-
+import Toast from 'react-bootstrap/Toast';
 import 'react-datepicker/dist/react-datepicker.css';
 import { Container, Form, Col, Row, Button, FormControl } from 'react-bootstrap';
 import DashNav from './DashNav';
@@ -8,8 +8,6 @@ import Sidebar from './Sidebar';
 import './CreateRide.css';
 import Home from '../Home';
 import contractContext from '../../utils/contractContext';
-import { BsDice1 } from "react-icons/bs";
- 
 let o,d,dd,ad,kc,cost;
 let startLat, startLng, endLat, endLng,distance ;
 
@@ -248,19 +246,21 @@ function CreateRide({ user }) {
         console.log(driveCost, capacity, originAddress, destAddress, year, month, day, hours, minutes, seconds,kmCost)
         // if (driveCost && capacity && originAddress && destAddress && departAt) {
         if (year==='' || month==='' ||   day==='' || hours==='' || minutes==='' ||   seconds==='' 
-        || driveCost==='' || capacity==='' || originAddress==='' || destAddress===''){
+        || driveCost===undefined || capacity==='' || originAddress===undefined || destAddress===undefined){
              
         console.log(driveCost, capacity, originAddress, destAddress, year, month, day, hours, minutes, seconds,driveDist)
         alert("invlid input")
+        
         // console.log(selectedDate)
 
     } else {
         const userDate = new Date(year, month, day, hours, minutes, seconds);
-
+        console.log(typeof originAddress)
         const departAt = userDate.getTime();
         createRide(driveCost, capacity, originAddress, destAddress, departAt);
         console.log(driveCost, capacity, originAddress, destAddress, departAt)
         alert("ride created")
+        
             
         }
     }
@@ -274,9 +274,11 @@ function CreateRide({ user }) {
     if (localStorage.getItem('mobile_no')) {
         return (
             <div>
+                
                 <DashNav sidebar={sidebar} showSidebar={showSidebar} user={user} />
                 <Sidebar sideNav={sidebar} />
                 <div id="createRide" className={sidebar ? 'createRide active' : 'createRide'}>
+                    
                     <Container>
                         <Col xs={12} lg={12} className="top-heading">
                             <Form style={{
@@ -290,7 +292,7 @@ function CreateRide({ user }) {
                                 onSubmit={onCreateRide}
                                 >
 
-                                <b style={{ color: "#6D19FC", fontWeight: "700", fontSize: "23px" }}>Create a Ride to your destination in town</b>
+                                <b style={{ color: "black", fontWeight: "700", fontSize: "23px" }}>Create a Ride to your destination in town</b>
 
                                 <Form.Group className="mt-4" controlId="formBasicDate">
                                     <Row>
@@ -405,9 +407,12 @@ function CreateRide({ user }) {
                                 </Button>
                             </Form>
                         </Col>
+                        
                     </Container>
                 </div>
+                
             </div>
+            
         );
     } else {
         return <Home />

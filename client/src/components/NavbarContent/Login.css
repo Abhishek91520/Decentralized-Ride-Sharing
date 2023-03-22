@@ -1,33 +1,15 @@
 .loginHeader{
-    background-color: #6D19FC;
-    border-top: 1px solid #6D19FC;
+    background-color: black;
+    border-top: 1px solid black !important;
+    box-shadow: none;
 }
 #collasible-nav-dropdown{
-    color: #6D19FC !important;
+    color: white !important;
 }
 .loginTitle{
     color: antiquewhite;
 }
-.login-submit,.login-cancel{
-    box-shadow: none !important;
-    border-radius: 0px !important;
-    border: 1px solid #6D19FC !important;
-    padding: 7px 25px;
-    font-weight: 700 !important;
-    text-align: center;
-    font-size: 12px !important;
-    text-transform: uppercase;
-}
-.login-submit{
-    background-color: #6D19FC !important;
-    border: 1px solid #6D19FC !important;
-    color: white;
-}
-.login-cancel{
-    border: 1px solid #6D19FC !important;
-    background-color: #ffffff !important;
-    color: #6D19FC !important;
-}
+
 input[type="email"],[type="password"],[type="number"],[type="text"]{
     box-shadow: none !important;
     border: 0 !important;
@@ -41,13 +23,257 @@ input[type="email"],[type="password"],[type="number"],[type="text"]{
     border-bottom: 1px solid #E5E4E2 !important;
 }
 .registerHeader{
-    background-color: #4B0082;
-    border-top: none;
+    background-color: black;
+    border-top: 1px solid black !important;
 }
 .registerTitle{
-    color: antiquewhite;
+    color: white;
 }
-.register-submit,.register-cancel{
+
+.top-heading{
+    font-size: 18px;
+    font-weight: bold;
+    /* color: #6D19FC; */
+}
+h6{
+    font-size: 14px;
+}
+
+/* .btn-get-started{
+    box-shadow: none !important;
+    border-radius: 0px !important;
+    padding: 5px 25px;
+    font-weight: 700 !important;
+    text-align: center;
+    font-size: 12px !important;
+    text-transform: uppercase;
+    margin:  100px 0 20px 0;
+    border:  1px solid black !important;
+    background-color: black !important;
+    text-transform: uppercase;
+    color: white;
+}
+.btn-get-started:hover{
+    border:  1px solid black !important;
+    background-color: white !important;
+    color: black !important;
+    
+} */
+.hometext{
+    color: black;
+    margin-top: 50px;
+}
+
+
+
+
+.buttonnew {
+    margin: 100px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+
+  }
+  
+  .buttonnew.learn-more {
+    width: 12rem;
+    height: auto;
+  }
+  
+  .buttonnew.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: black;
+    border-radius: 1.625rem;
+  }
+  
+  .buttonnew.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+  }
+  
+  .buttonnew.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+  }
+  
+  .buttonnew.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+  }
+  
+  .buttonnew.learn-more .button-text {
+    transition: all 0.5s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .buttonnew:hover .circle {
+    width: 100%;
+  }
+  
+  .buttonnew:hover .circle .icon.arrow {
+    background: #ffffff;
+    transform: translate(1rem, 0);
+  }
+  
+  .buttonnew:hover .button-text {
+    color: #ffffff;
+  }
+
+  
+
+
+  .rowforbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 360px;
+    margin: auto;
+    margin-top: 70px;
+  }
+
+  /* .login-cancel{
+    box-shadow: none !important;
+    border-radius: 0px !important;
+    border: 1px solid #6D19FC !important;
+    padding: 7px 25px;
+    font-weight: 700 !important;
+    text-align: center;
+    font-size: 12px !important;
+    text-transform: uppercase;
+} */
+
+/* .login-cancel{
+    border: 1px solid #6D19FC !important;
+    background-color: #ffffff !important;
+    color: #6D19FC !important;
+} */
+.login-submit,.login-cancel,.register-submit,.register-cancel{
+    --color: black;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color) !important;
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    background-color: white !important;
+    border: 1px solid black !important;
+    color: black !important;
+  }
+
+  
+  .login-submit:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  
+  .login-submit:hover {
+    color: white !important;
+   
+  }
+  
+  .login-submit:before {
+    top: 100%;
+    left: 100%;
+    color: white;
+    transition: all .7s;
+  }
+  
+  .login-submit:hover:before {
+    top: -30px;
+    left: -30px;
+  }
+  
+  .login-submit:active:before {
+    background: black;
+    color: white;
+    transition: background 0s;
+  }
+
+  .login-cancel:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  
+  .login-cancel:hover {
+    color: white !important;
+  }
+  
+  .login-cancel:before {
+    top: 100%;
+    left: 100%;
+    color: white;
+    transition: all .7s;
+  }
+  
+  .login-cancel:hover:before {
+    top: -30px;
+    left: -30px;
+  }
+  
+  .login-cancel:active:before {
+    background: black;
+    color: white;
+    transition: background 0s;
+  }
+
+  /* .register-submit,.register-cancel{
     box-shadow: none !important;
     border-radius: 0px !important;
     border: 1px solid #4B0082 !important;
@@ -65,33 +291,88 @@ input[type="email"],[type="password"],[type="number"],[type="text"]{
     border: 1px solid #4B0082;
     background-color: #ffffff !important;
     color:#4B0082 !important;
-}
-.top-heading{
-    font-size: 18px;
-    font-weight: bold;
-    /* color: #6D19FC; */
-}
-h6{
-    font-size: 14px;
-}
+} */
 
-.btn-get-started{
-    box-shadow: none !important;
-    border-radius: 0px !important;
-    padding: 5px 25px;
-    font-weight: 700 !important;
-    text-align: center;
-    font-size: 12px !important;
-    text-transform: uppercase;
-    margin:  20px 0 20px 0;
-    border:  1px solid #6D19FC !important;
-    background-color: #6D19FC !important;
-    text-transform: uppercase;
+.register-submit:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  
+  .register-submit:hover {
+    color: white !important;
+  }
+  
+  .register-submit:before {
+    top: 100%;
+    left: 100%;
     color: white;
-}
-.btn-get-started:hover{
-    border:  1px solid #6D19FC !important;
-    background-color: white !important;
-    color: #6D19FC !important;
-}
-    
+    transition: all .7s;
+  }
+  
+  .register-submit:hover:before {
+    top: -30px;
+    left: -30px;
+  }
+  
+  .register-submit:active:before {
+    background: black;
+    color: white;
+    transition: background 0s;
+  }
+  .register-cancel:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  
+  .register-cancel:hover {
+    color: white !important;
+  }
+  
+  .register-cancel:before {
+    top: 100%;
+    left: 100%;
+    color: white;
+    transition: all .7s;
+  }
+  
+  .register-cancel:hover:before {
+    top: -30px;
+    left: -30px;
+  }
+  
+  .register-cancel:active:before {
+    background: black;
+    color: white;
+    transition: background 0s;
+  }
+
+
+
+
+  .loginbtn,.registerbtn{
+
+    background-color: black !important;
+    color: black!important ;
+    border-color: black !important;
+
+  }
+  .tsparticles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }

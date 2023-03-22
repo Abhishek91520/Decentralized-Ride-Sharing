@@ -160,7 +160,7 @@ const navigate=useNavigate();
             aria-labelledby="contained-modal-title-vcenter"
             centered
         >
-            <Modal.Header className="loginHeader" closeButton>
+            <Modal.Header className="loginHeader" closeButton closeVariant="white">
                 <Modal.Title className="loginTitle" id="contained-modal-title-vcenter">
                     Login
                 </Modal.Title>

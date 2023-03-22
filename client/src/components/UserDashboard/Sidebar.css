@@ -4,13 +4,13 @@
   }
   
   #sidebar {
-    background-color: #6D19FC;
+    background-color: black;
     min-width: 16rem;
     width: 16rem;
     padding: 10px;
     height: 100vh;
     position: fixed;
-    top: 70px;
+    top: 57px;
     left: 0;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.4s;
@@ -38,15 +38,17 @@
     letter-spacing: 0.1em;
   }
   .text-gray {
-    color: #aaa;
+    color: white;
   }
   .sideNavLink:hover{
-      background-color: #00BFFF;
+      background-color: #00BFFF !important;
+      color: black !important;
   }
   .button {
     background-color:transparent;
     background-repeat:no-repeat;
     border: none;
+    color: white !important;
     cursor:pointer;
     overflow: hidden;
     outline:none;
@@ -58,16 +60,16 @@
   }
   .cardBox1,.cardBox2{
     margin: 5px;
-    background-color: #6D19FC;
+    background-color: black;
     border: none;
     border-radius: 0px;
     color: #FFFFFF;
   }
   .cardBox1{
-    background: linear-gradient(110deg, #6D19FC 60%, #a8fc19 40%);
+    background: linear-gradient(110deg, black 60%, #00BFFF 40%);
   }
   .cardBox2{
-    background: linear-gradient(110deg, #6D19FC 60%, #9D65FD 40%);
+    background: linear-gradient(110deg, black 60%, #00BFFF 40%);
   }
 
   @media (max-width: 768px) {

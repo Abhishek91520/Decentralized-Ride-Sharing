@@ -46,20 +46,78 @@ color: #7B7D7D;
 }
 
 .rideButton{
-margin:  20px 0 20px 0;
-padding: 5px 20px;
-border:  1px solid #6D19FC;
-background-color: #6D19FC;
-color: white;
-font-size: 16px;
-border-radius: 0px;
-box-shadow: none !important;
+  --color: black;
+  font-family: inherit;
+  display: inline-block;
+  width: 8em;
+  
+  line-height: 2.5em;
+  margin-top: 40px;
+
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--color) !important ;
+  transition: color .5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  background-color: white !important;
+  color: black !important;
 }
-.rideButton:hover{
+/* .rideButton:hover{
 border:  1px solid #6D19FC;
 background-color: white;
 color: #6D19FC;
+}  */
+
+.rideButton:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
 }
+
+.rideButton:hover {
+  color: white !important;
+}
+
+.rideButton:before {
+  top: 100%;
+  left: 100%;
+  color: white;
+  transition: all .7s;
+}
+
+.rideButton:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+.rideButton:active:before {
+  background: black;
+  color: white;
+  transition: background 0s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 768px) {
    .createRide{

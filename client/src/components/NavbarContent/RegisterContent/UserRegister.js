@@ -45,7 +45,7 @@ function DriverRegister(props) {
         >
             {/* {console.log("User", user)} */}
 
-            <Modal.Header className="registerHeader" closeButton>
+            <Modal.Header className="registerHeader" closeButton closeVariant="white">
                 <Modal.Title className="registerTitle" id="contained-modal-title-vcenter">
                     User Registration
                 </Modal.Title>

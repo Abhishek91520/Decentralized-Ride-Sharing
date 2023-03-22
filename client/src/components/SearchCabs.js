@@ -30,8 +30,8 @@ import background from '../img/search_cab_background.avif'
      },[]);
 
     return (
-    <div style={{backgroundColor:"#b53389",
-    backgroundImage: `url(${background})`,
+    <div style={{backgroundColor:"white",
+    //backgroundImage: `url(${background})`,
     //   backgroundImage: `url("https://images.unsplash.com/photo-1584875939087-f1d9a6d27e97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80")`,
       height: '100vh',
       backgroundPosition: 'center',
@@ -44,7 +44,7 @@ import background from '../img/search_cab_background.avif'
           <Row>
               <Col xs={12} lg={5} className="top-heading text-center align-items-center justify-content-center">
                 <div style={{backgroundColor:"#FFFFFF",color:"black",borderRadius:"3px"}} className="text-center align-items-center justify-content-center p-4">
-                    <b style={{color:"#6D19FC",fontWeight:"700",fontSize:"17"}}>Book a city taxi to your destination in town</b>
+                    <b style={{color:"black",fontWeight:"700",fontSize:"17"}}>Book a city taxi to your destination in town</b>
                     <br />
                         {/* <Form.Group className="mb-3 mt-3" controlId="formBasicEmail">
                         <Form.Control type="text" placeholder="Enter Pick up location" className="text-center" />
@@ -64,13 +64,13 @@ import background from '../img/search_cab_background.avif'
                 
 
                 {getride && availableRides.length>0?
-                <Table className="mt-3" responsive="sm" style={{backgroundColor:"#FFFFFF",color: "rgb(109, 25, 252)",borderRadius:"3px"}}>
+                <Table className="mt-3" responsive="sm" style={{backgroundColor:"#FFFFFF",color: "black",borderRadius:"3px"}}>
                     <thead >
                     <tr>
                         <th>Pick Up</th>
                         <th>Destination</th>
-                        <th>Ride Date</th>
-                        <th>Ride Time</th>
+                        <th>Date</th>
+                        <th>Time</th>
                     </tr>
                     </thead>
                     <tbody>

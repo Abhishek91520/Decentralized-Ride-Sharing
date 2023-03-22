@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
-import { Navbar, Nav, NavDropdown, Container}from "react-bootstrap";
+import { Navbar, Nav, NavDropdown, Container, Button}from "react-bootstrap";
 import AdminLogin from './LoginContent/AdminLogin';
 import UserLogin from './LoginContent/UserLogin';
 import AdminRegister from './RegisterContent/AdminRegister';
@@ -14,25 +14,25 @@ function Navigation({setLoginUser, setUserAccount,userAccount}){
     const [modalUserRegister, setModalUserRegister] = useState(false);
 
     return(
-        <Navbar collapseOnSelect expand="lg" bg="light" fixed="top">
+        <Navbar collapseOnSelect expand="lg" bg="black" fixed="top">
             <Container>
                 <Link to="/" className="text-decoration-none ms-3">
-                    <Navbar.Brand style={{color:"#6D19FC",fontWeight:"700",fontSize:"22px"}}>DRS</Navbar.Brand>
+                    <Navbar.Brand style={{color:"white",fontWeight:"700",fontSize:"22px"}}>DRS</Navbar.Brand>
                 </Link>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="ms-auto">
                     <Link to="/SearchCabs" className="text-decoration-none ms-3">
-                        <Nav.Link href="/SearchCabs" style={{color:"#6D19FC"}}>Search Rides</Nav.Link>
+                        <Nav.Link href="/SearchCabs" style={{color:"white"}}>Search Rides</Nav.Link>
                     </Link>
-                    <NavDropdown title="Login" id="collasible-nav-dropdown" className="ms-3">
+                    <Button title="Login" id="collasible-nav-dropdown" className="loginbtn ms-3">
                         {/* <NavDropdown.Item href="#admin" onClick={() => setModalShow(true)} className="navDropdownItem">Admin</NavDropdown.Item>
                         <AdminLogin
                             show={modalShow}
                             onHide={() => setModalShow(false)}
                         />
                         <NavDropdown.Divider /> */}
-                        <NavDropdown.Item href="#user" onClick={() => setModalDisplay(true)} className="navDropdownItem">User</NavDropdown.Item>
+                        <Nav href="#user" onClick={() => setModalDisplay(true)} className="navDropdownItem">Login</Nav>
                         <UserLogin
                             show={modalDisplay}
                             onHide={() => setModalDisplay(false)}
@@ -40,21 +40,21 @@ function Navigation({setLoginUser, setUserAccount,userAccount}){
                             setUserAccount={setUserAccount}
                             userAccount={userAccount}
                         />
-                    </NavDropdown>
-                    <NavDropdown title="Register" id="collasible-nav-dropdown" className="ms-3">
+                    </Button>
+                    <Button title="Register" id="collasible-nav-dropdown" className="registerbtn ms-3" >
                      {/* <NavDropdown.Item href="#adminRegister" onClick={() => setModalAdminRegister(true)} className="navDropdownItem">Admin</NavDropdown.Item>
                         <AdminRegister
                             show={modalAdminRegister}
                             onHide={() => setModalAdminRegister(false)}
                         />
                         <NavDropdown.Divider />  */}
-                        <NavDropdown.Item href="#userRegister" onClick={() => setModalUserRegister(true)} className="navDropdownItem">User</NavDropdown.Item>
+                        <Nav href="#userRegister" onClick={() => setModalUserRegister(true)} className="navDropdownItem">Register</Nav>
                         <UserRegister
                             show={modalUserRegister}
                             onHide={() => setModalUserRegister(false)}
                         />
                         
-                    </NavDropdown>
+                    </Button>
                 </Nav>
                 </Navbar.Collapse>
             </Container>
